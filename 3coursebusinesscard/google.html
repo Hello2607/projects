@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 20px;
+            gap: 20px;
+        }
+
+        .header a {
+            color: rgba(0, 0, 0, 0.87);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            gap: 30px;
+        }
+
+        .logo {
+            font-size: 92px;
+            color: #4285f4;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .search-container {
+            width: 100%;
+            max-width: 560px;
+            padding: 0 20px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #dadce0;
+            border-radius: 24px;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-box:hover {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .search-icon {
+            color: #9aa0a6;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .search-input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        .search-input::placeholder {
+            color: #9aa0a6;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-size: 14px;
+            padding: 10px 24px;
+            cursor: pointer;
+            margin: 11px 4px;
+        }
+
+        button:hover {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            color: #202124;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+            padding: 15px 20px;
+            font-size: 14px;
+            color: #70757a;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .footer-links a {
+            color: #70757a;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #4285f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <a href="#">Sign in</a>
+    </div>
+
+    <div class="container">
+        <div class="logo">Google</div>
+
+        <div class="search-container">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" placeholder="Search Google or type a URL">
+            </div>
+            <div class="buttons">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div>
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
